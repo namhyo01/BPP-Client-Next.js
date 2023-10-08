@@ -29,7 +29,7 @@ export default function Home(): any {
       //   `&response_type=code`
       'https://dev.yeohaengparty.com/api/oauth2/authorization/kakao'
     );
-    router.push('register');
+    // router.push('register');
   };
   const googleLogin = () => {
     // setUserID('0');
