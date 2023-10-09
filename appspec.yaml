@@ -8,5 +8,4 @@ Resources:
           - ContainerName: "dev-yeohaeng-web"
             ContainerPort: 80
           - ContainerName: "nextjs-dev"
-            ContainerPort: 3000
         PlatformVersion: "LATEST"
