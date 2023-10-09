@@ -13,22 +13,16 @@ import { useRouter } from 'next/navigation';
 
 export default function Home(): any {
   const router = useRouter();
-  const KAKAO_REST_API_KEY = process.env.NEXT_PUBLIC_KAKAO_REST_API_KEY;
-  const KAKAO_REDIRECT_URI = process.env.NEXT_PUBLIC_KAKAO_REDIRECT_URI;
-  const GOOGLE_REST_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_REST_API_KEY;
-  const GOOGLE_REDIRECT_URI = process.env.NEXT_PUBLIC_GOOGLE_REDIRECT_URI;
-  const NAVER_REST_API_KEY = process.env.NEXT_PUBLIC_NAVER_REST_API_KEY;
-  const NAVER_REDIRECT_URI = process.env.NEXT_PUBLIC_NAVER_REDIRECT_URI;
-  const NAVER_STATE_STRING = process.env.NEXT_PUBLIC_NAVER_STATE_STRING;
+
   const kakaoLogin = () => {
     // setUserID('1');
-    window.open(
+    location.href = 
       // `https://kauth.kakao.com/oauth/authorize` +
       //   `?client_id=${KAKAO_REST_API_KEY}` +
       //   `&redirect_uri=${KAKAO_REDIRECT_URI}` +
       //   `&response_type=code`
       'https://dev.yeohaengparty.com/api/oauth2/authorization/kakao'
-    );
+
     // router.push('register');
   };
   const googleLogin = () => {
@@ -153,7 +147,7 @@ export default function Home(): any {
         }}
       />
       <Image
-        src={instagram_btn}
+        src={apple_btn}
         alt="btn"
         style={{
           position: 'relative',
