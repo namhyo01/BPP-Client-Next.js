@@ -72,7 +72,7 @@ jobs:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: ${{ env.ECS_SERVICE }}
           cluster: ${{ env.ECS_CLUSTER }}
-        #   codedeploy-appspec: appspec.yaml
+          codedeploy-appspec: appspec.yaml
           wait-for-service-stability: true
 
 
